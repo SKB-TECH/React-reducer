@@ -8,7 +8,7 @@ const Phone = (props) => {
     return (
         <div className='container'>
             <img src={phone} alt="" srcset="" />
-            <p>Disponible: <span id="counter">{props.phones}</span></p>
+            <p>Disponible: <span id="counter">{props.phones.phones}</span></p>
             <button className='bay_phone' onClick={() => props.bay_phone()}>Acheter</button>
         </div>
     );

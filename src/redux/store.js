@@ -1,6 +1,11 @@
-import { legacy_createStore as createStore } from "redux";
+import { legacy_createStore as createStore, combineReducers } from "redux";
 import PhoneReducer from "./phone/reducerPhone";
+import reducerTv from "./tv/reducerTv";
 
-const store = createStore(PhoneReducer)
+const rootReducers = combineReducers({
+    phones: PhoneReducer,
+    television: reducerTv
+})
+const store = createStore(rootReducers)
 
 export default store
