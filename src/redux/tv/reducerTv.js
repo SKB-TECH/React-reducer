@@ -1,5 +1,6 @@
 import { BAY_TV } from "./type";
 
+
 const initialTv = {
     tv: 15
 }
@@ -8,9 +9,8 @@ const reducerTv = (state = initialTv, action) => {
         case "BAY_TV":
             return {
                 ...state,
-                tv: state.tv - 1
+                tv: state.tv - action.payload
             }
-
         default:
             return state;
     }

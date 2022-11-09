@@ -1,8 +1,9 @@
 import { BAY_TV } from './type'
 
-const bayTv = () => {
+const bayTv = (nbr) => {
     return {
-        type: BAY_TV
+        type: BAY_TV,
+        payload: nbr
     }
 }
 

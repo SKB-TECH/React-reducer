@@ -7,7 +7,7 @@ const PhoneReducer = (state = initialStatePhone, action) => {
         case "BAY_PHONE":
             return {
                 ...state,
-                phones: state.phones - 1
+                phones: state.phones - action.payload
             }
             break;
 
